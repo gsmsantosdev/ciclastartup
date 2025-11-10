@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+  <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" sizes="192x192" href="../assets/icon/ciclastartup.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Cicla Startup Atendimento</title>
+  </head>
+
+  <body>
+    <header class="active">
+      <div class="logo">
+        <img src="../assets/icon/ciclastartup.png " alt="Logo Cicla">
+      </div>
+      <div class="menu active-menu">
+        <button class="menu-toggle" aria-label="Abrir menu">
+          <i class='bxr bx-menu'></i>
+        </button>
+        <button class="menu-search" aria-label="Buscar">
+          <i class="bi bi-search"></i>
+        </button>
+      </div>
+         <nav>
+            <ul>
+                <li><a href="../html/index.html">QUEM SOMOS</a></li>
+                <li><a href="../html/transparencia.html">TRANSPARÊNCIA</a></li>
+                <li><a href="../html/analitics.html">ANALITICS</a></li>
+                <li><a href="../html/coleta.html" id="abrir-menu">COLETA <i class="bi bi-chevron-down"></i></a></li>
+                <li><a href="../html/loja.html">LOJA</a></li>
+                <li><a href="../html/blog.html">BLOG</a></li>
+                <li><a href="../html/atendimento.html"><i class="bi bi-headset"></i> SAC</a></li>
+            </ul>
+        </nav>
+         <!-- Modal de aviso de login -->
+      <div id="alerta-login" class="alerta-login">
+        <div class="alerta-box">
+          <i class="bi bi-lock-fill"></i>
+          <h3>Acesso restrito</h3>
+          <p>Apenas Empresas podem acessar está pagina.</p>
+          <button id="fechar-alerta">Fechar</button>
+        </div>
+      </div>
+      <div class="auth-buttons">
+            <button class="btn-register" href="/frontend/template/register.html">CADASTRE-SE</button>
+            <button class="btn-login" href="/frontend/template/login.html"><i class="bi bi-person-fill"></i> LOGIN</button>
+        </div>
+    </header>
+    <section class="perfil-section">
+      <div class="cont-contact">
+        <img src="../icons/ciclastartup.png" alt="Logo da Cicla Startup">
+        <h2 class="empresa-nome"><i class="bi bi-patch-check-fill"></i> Cicla Startup</h2>
+        <p class="empresa-descricao">
+          Promovendo um futuro mais sustentável 🌱
+          Conectamos pessoas e empresas em prol da reciclagem e do meio ambiente.
+        </p>
+        <div class="empresa-infos">
+          <div class="info-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <p><strong>Localização:</strong>  Minas Gerais, Uberlândia</p>
+          </div>
+          <div class="info-item">
+            <i class="bi bi-envelope-fill"></i>
+            <p><strong>E-mail:</strong> <a href="mailto:contato@cicla.com.br">contato@cicla.com.br</a></p>
+          </div>
+          <div class="info-item">
+            <i class="bi bi-globe2"></i>
+            <p><strong>Site:</strong> <a href="#">www.ciclastartup.com.br</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="menu-opcoes" id="menu-opcoes">
+          <div class="menu-box">
+              <span class="fechar" id="fechar-menu">&times;</span>
+              <img src="../icons/ciclastartup.png" alt="">
+              <a href="../html/pontos.html" class="btn-opcao"><i class="bi bi-person-bounding-box"></i> Usuario</a>
+              <a href="../html/login-business.html" class="btn-opcao"><i class="bi bi-person-fill-gear"></i> Acesso Empresa</a>
+          </div>
+      </div> 
+  </body>
+   <div data-theme="cicla">
+      <footer class="bs-footer">
+        <div class="bs-footer__top">
+          <div class="bs-brand">
+            <a href="#" class="brand-link" aria-label="Cicla">
+              <span class="brand-logo"
+                ><img src="../assets/icon/ciclastartup.png"
+              /></span>
+            </a>
+          </div>
+
+            <div class="bs-links">
+            <div class="bs-col">
+              <h6>Links</h6>
+              <ul>
+                <li><a href="#">Quem Somos</a></li>
+                <li><a href="#">Transparencia</a></li>
+                <li><a href="#">Analitics</a></li>
+                <li><a href="#">Coleta</a></li>
+                <li><a href="#">Loja</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Sac</a></li>
+              </ul>
+            </div>
+            <div class="bs-col">
+              <h6>Comunidade</h6>
+              <ul>
+                <li><a href="#">Whatspp</a></li>
+                <li><a href="#">Facebook</a></li>
+              </ul>
+            </div>
+            <div class="bs-col">
+              <h6>Contato</h6>
+              <ul>
+                <li><a href="#">Cicla</a></li>
+                <li><a href="#">ciclastartup@gmail.com</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="bs-footer__bottom">
+          <div class="bottom-left">
+            <span id="copy-year"></span> © Cicla Startup
+          </div>
+          <div class="bottom-right">
+            <a href="#" aria-label="GitHub" class="social"
+              ><i class="bx bxl-github"></i
+            ></a>
+            <a href="#" aria-label="X" class="social"
+              ><i class="bx bxl-twitter"></i
+            ></a>
+            <a href="#" aria-label="Open Collective" class="social"
+              ><i class="bx bx-donate-heart"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
+    </div>  
+  <script src="../js/colet.js"></script>
+  <script src="../js/alerta.js"></script>
+  <script src="../js/buttonmobile.js"></script>
+</html>

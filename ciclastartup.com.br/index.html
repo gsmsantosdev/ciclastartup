@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" sizes="192x192" href="/frontend/src/assets/icon/ciclastartup.png" />
+    <link
+      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <title>Cicla Startup</title>
+    <link rel="stylesheet" href="/frontend/src/style/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img src="/frontend/src/assets/icon/ciclastartup.png" alt="Logo Cicla" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/html/index.html">QUEM SOMOS</a></li>
+          <li><a href="/html/transparencia.html">TRANSPARÊNCIA</a></li>
+          <li><a href="/html/analitics.html">ANALITICS</a></li>
+          <li>
+            <a href="/html/coleta" id="abrir-menu"
+              >COLETA <i class="bi bi-chevron-down"></i
+            ></a>
+          </li>
+          <li><a href="/html/loja.html">LOJA</a></li>
+          <li><a href="/html/blog.html">BLOG</a></li>
+          <li>
+            <a href="/html/atendimento.html"
+              ><i class="bi bi-headset"></i> SAC</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="menu">
+        <button id="menu-toggle">
+          <i class="bx bx-menu"></i>
+        </button>
+      </div>
+      <!-- Modal de aviso de login -->
+      <div id="alerta-login" class="alerta-login">
+        <div class="alerta-box">
+          <i class="bi bi-lock-fill"></i>
+          <h3>Acesso restrito</h3>
+          <p>Apenas Empresas podem acessar está pagina.</p>
+          <button id="fechar-alerta">Fechar</button>
+        </div>
+      </div>
+      <div class="auth-buttons">
+            <button class="btn-register" href="/frontend/template/register.html">CADASTRE-SE</button>
+            <button class="btn-login" href="/frontend/template/login.html"><i class="bi bi-person-fill"></i> LOGIN</button>
+        </div>
+    </header>
+    <div class="container-main">
+      <section class="main">
+        <div class="overlay"></div>
+        <h1>Reciclar é preciso, <span>e urgente!</span></h1>
+        <p>
+          Junte-se a nós na missão de transformar o mundo através da reciclagem.
+          Sua participação faz toda a diferença!
+        </p>
+        <a class="btn-get-started" href="/src/html/apoiador.html">
+          <i class="bx bx-donate-heart"></i> TORNE-SE APOIADOR
+        </a>
+      </section>
+      <section class="on-business">
+        <div class="container-on">
+          <div class="left">
+            <img src="/frontend/src/assets/icon/ciclastartup.png" alt="Imagem Cicla" />
+          </div>
+          <div class="right">
+            <h1>Sobre a Cicla</h1>
+            <p>
+              A Cicla nasceu dentro de uma sala de aula. Éramos cinco estudantes
+              em um curso, e tínhamos um desafio: criar um projeto que realmente
+              fizesse sentido no mundo real. Ao observar o cenário atual,
+              percebemos o quanto a questão ambiental era urgente, mas ainda
+              pouco acessível para a maioria das pessoas e empresas. Foi então
+              que decidimos apostar no nicho da sustentabilidade.
+            </p>
+            <p>
+              Começamos com uma pergunta simples: “Por que ainda é tão difícil
+              descartar recicláveis corretamente?” A partir desse
+              questionamento, entendemos que faltavam soluções práticas,
+              acessíveis e que conectassem quem produz resíduos, quem os coleta
+              e quem transforma esses materiais em novos produtos. Foi assim que
+              nasceu a Cicla, com o propósito de facilitar o descarte consciente
+              e fortalecer a economia circular.
+            </p>
+            <p>
+              Oque a Cicla faz: A Cicla oferece o de recolhimento de lixo
+              reciclável para empresas e condomínios. Por meio de uma
+              assinatura, realizaremos a coleta mensal dos resíduos recicláveis
+              que o cliente produzir. Além disso, também oferecemos pontos de
+              entrega voluntária, permitindo que qualquer pessoa também possa
+              destinar seus recicláveis de forma correta. Complementando nossos
+              serviços, contamos com um marketplace sustentável, um espaço
+              dedicado à venda de produtos feitos a partir de materiais
+              recicláveis, incentivando a economia circular e o consumo
+              consciente.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="team">
+        <div class="text-container-card">
+          <h1>EQUIPE CICLA STARTUP</h1>
+          <p>Conheça nossa equipe, responsável pela criação do projeto.</p>
+        </div>
+
+        <div class="container-card" id="team-container">
+          <div class="card">
+            <img src="/frontend/src/assets/img/guilherme.jpg" alt="Guilherme" />
+            <h2>Guilherme</h2>
+            <p class="cargo"><i class="bx bx-crown"></i> CEO</p>
+            <p class="descricao">
+              <i class="bi bi-quote"></i>A Cicla foi a prova que um passo de
+              cada vez faz a gente ir longe<i class="bi bi-quote"></i>
+            </p>
+          </div>
+
+          <div class="card">
+            <img
+              src="/frontend/src/assets/img/yuri.jpg"
+              alt="Yuri Lemos Garcia"
+            />
+            <h2>Yuri Lemos Garcia</h2>
+            <p class="cargo">
+              <i class="bx bx-chart-line"></i> Diretor Administrativo
+            </p>
+            <p class="descricao">
+              <i class="bi bi-quote"></i>A Cicla me fez acreditar em inovação<i
+                class="bi bi-quote"
+              ></i>
+            </p>
+          </div>
+
+          <div class="card">
+            <img
+              src="/frontend/src/assets/img/isacbarbosa-2.jpg"
+              alt="Isaque Oliveira de Carvalho"
+            />
+            <h2>Isaque Oliveira de Carvalho</h2>
+            <p class="cargo">
+              <i class="bx bx-landmark"></i> Diretor Financeiro
+            </p>
+            <p class="descricao">
+              <i class="bi bi-quote"></i>A Cicla transformou cada recomeço em
+              força, e cada volta em minha vida um novo avanço<i
+                class="bi bi-quote"
+              ></i>
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="/frontend/src/assets/img/vittor.jpg" alt="João Vittor" />
+            <h2>João Vittor</h2>
+            <p class="cargo">
+              <i class="bx bx-megaphone"></i> Diretor de Marketing
+            </p>
+            <p class="descricao">
+              <i class="bi bi-quote"></i>Para mim, a Cicla foi o empurrão que me
+              faltava<i class="bi bi-quote"></i>
+            </p>
+          </div>
+
+          <div class="card">
+            <img
+              src="/frontend/src/assets/img/debora.jpg"
+              alt="Débora Cristina"
+            />
+            <h2>Débora Cristina</h2>
+            <p class="cargo">
+              <i class="bx bx-megaphone"></i> Vice Diretora de Marketing
+            </p>
+            <p class="descricao">
+              <i class="bi bi-quote"></i>Descrição a respeito dos cargos de cada
+              um<i class="bi bi-quote"></i>
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="/frontend/src/assets/img/miguel.jpg" alt="Miguel" />
+            <h2>Miguel</h2>
+            <p class="cargo"><i class="bx bx-palette"></i> Designer</p>
+            <p class="descricao">
+              <i class="bi bi-quote"></i> A Cicla fez ele enxergar novas
+              oportunidades<i class="bi bi-quote"></i>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="avaliations">
+        <div class="container-avaliations">
+          <div class="avaliation-info">
+            <div class="title">
+              <p>
+                Avaliações de clientes e metas que a empresa busca alcançar
+                Metas: Plantar 20 mil árvores, Conscientizar o Brasil
+              </p>
+            </div>
+            <div class="stats">
+              <div class="stat">
+                <span class="number" data-target="128">+126 Mil</span>
+                <p><i class="bx bx-user-check"></i> Materiais Reciclads</p>
+              </div>
+
+              <div class="stat">
+                <span class="number" data-target="1237">+70</span>
+                <p><i class="bx bx-like"></i> Clientes Satisfeitos</p>
+              </div>
+
+              <div class="stat">
+                <span class="number" data-target="14">7</span>
+                <p><i class="bx bx-trophy"></i> Parcerias Ativas</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="whatsapp-blink">
+        <a
+          href="https://wa.me/5534996523794"
+          target="_blank"
+          class="whatsapp-btn"
+        >
+          <i class="bi bi-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+    <div data-theme="cicla">
+      <footer class="bs-footer">
+        <div class="bs-footer__top">
+          <div class="bs-brand">
+            <a href="#" class="brand-link" aria-label="Cicla">
+              <span class="brand-logo"
+                ><img src="/frontend/src/assets/icon/ciclastartup.png"
+              /></span>
+            </a>
+          </div>
+
+          <div class="bs-links">
+            <div class="bs-col">
+              <h6>Links</h6>
+              <ul>
+                <li><a href="#">Quem Somos</a></li>
+                <li><a href="#">Transparencia</a></li>
+                <li><a href="#">Analitics</a></li>
+                <li><a href="#">Coleta</a></li>
+                <li><a href="#">Loja</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Sac</a></li>
+              </ul>
+            </div>
+            <div class="bs-col">
+              <h6>Comunidade</h6>
+              <ul>
+                <li><a href="#">Whatspp</a></li>
+                <li><a href="#">Facebook</a></li>
+              </ul>
+            </div>
+            <div class="bs-col">
+              <h6>Contato</h6>
+              <ul>
+                <li><a href="#">Cicla</a></li>
+                <li><a href="#">ciclastartup@gmail.com</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="/frontend/src/js/buttonmobile.js"></script>
+    <script src="/frontend/src/js/scrolled.js"></script>
+    <script src="/frontend/src/js/alerta.js"></script>
+    <script src="/frontend/src/js/buttonmobile.js"></script>
+  </body>
+</html>

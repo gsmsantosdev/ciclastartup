@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="icon" sizes="192x192" href="../assets/icon/ciclastartup.png" />
+    <link
+      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <title>Cicla Startup</title>
+  </head>
+
+  <body>
+    <header class="active">
+      <div class="logo">
+        <img src="../assets/icon/ciclastartup.png" alt="Logo Cicla" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../html/index.html">QUEM SOMOS</a></li>
+          <li><a href="../html/transparencia.html">TRANSPARÊNCIA</a></li>
+          <li><a href="../html/analitics.html">ANALITICS</a></li>
+          <li>
+            <a href="../html/coleta.html" id="abrir-menu"
+              >COLETA <i class="bi bi-chevron-down"></i
+            ></a>
+          </li>
+          <li><a href="../html/loja.html">LOJA</a></li>
+          <li><a href="../html/blog.html">BLOG</a></li>
+          <li>
+            <a href="../html/atendimento.html"
+              ><i class="bi bi-headset"></i> SAC</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="menu">
+        <button id="menu-toggle">
+          <i class="bx bx-menu"></i>
+        </button>
+      </div>
+       <!-- Modal de aviso de login -->
+      <div id="alerta-login" class="alerta-login">
+        <div class="alerta-box">
+          <i class="bi bi-lock-fill"></i>
+          <h3>Acesso restrito</h3>
+          <p>Apenas Empresas podem acessar está pagina.</p>
+          <button id="fechar-alerta">Fechar</button>
+        </div>
+      </div>
+      <div class="auth-buttons">
+            <button class="btn-register" href="/frontend/template/register.html">CADASTRE-SE</button>
+            <button class="btn-login" href="/frontend/template/login.html"><i class="bi bi-person-fill"></i> LOGIN</button>
+        </div>
+    </header>
+<section class="marketplace" id="marketplace">
+  <div class="container">
+    <div class="mk-banner" aria-roledescription="carousel">
+      <div class="mk-track">
+        <article class="mk-slide">
+          <img src="../assets/cicla-background.png" alt="Coleção Cicla Sustentável">
+        </article>
+        <article class="mk-slide">
+          <img src="../assets/cicla-background.png" alt="Tecnologia e Gadgets">
+          <div class="mk-slide__content">
+          </div>
+        </article>
+        <article class="mk-slide">
+          <img src="../assets/cicla-background.png" alt="Beleza e Bem-estar">
+          <div class="mk-slide__content">
+          </div>
+        </article>
+      </div>
+      <button class="mk-nav mk-prev" aria-label="Anterior"><i class="bi bi-chevron-left"></i></button>
+      <button class="mk-nav mk-next" aria-label="Próximo"><i class="bi bi-chevron-right"></i></button>
+      <div class="mk-dots" role="tablist" aria-label="Seleção do banner">
+        <button class="mk-dot" role="tab" aria-selected="true" aria-controls="slide-1" data-index="0"></button>
+        <button class="mk-dot" role="tab" aria-selected="false" aria-controls="slide-2" data-index="1"></button>
+        <button class="mk-dot" role="tab" aria-selected="false" aria-controls="slide-3" data-index="2"></button>
+      </div>
+    </div>
+
+    <div class="mk-grid">
+      <article class="mk-card">
+        <i class="bi bi-bag-check-fill orange"></i>
+        <img src="../assets/garrafainox.png" alt="Garrafa Reutilizável Inox 750ml">
+        <h4>Garrafa Reutilizável Inox 750ml</h4>
+        <div class="mk-tags"><span class="mk-badge mk-badge--eco">Reutilizável</span><span class="mk-badge">Sem BPA</span></div>
+        <div class="mk-price"><span class="mk-price__now">R$ 79,90</span><span class="mk-price__old">R$ 99,90</span></div>
+        <div class="mk-rate"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><span>4,0</span></div>
+        <button class="mk-btn mk-btn--ghost">Comprar</button>
+      </article>
+
+      <article class="mk-card">
+        <i class="bi bi-bag-check-fill"></i>
+        <img src="../assets/talherbambu.webp" alt="Kit Talheres de Bambu com Estojo">
+        <h4>Kit Talheres de Bambu</h4>
+        <div class="mk-tags"><span class="mk-badge mk-badge--eco">Biodegradável</span><span class="mk-badge">Livre de plástico</span></div>
+        <div class="mk-price"><span class="mk-price__now">R$ 49,90</span><span class="mk-price__old">R$ 69,90</span></div>
+        <div class="mk-rate"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><span>4,5</span></div>
+        <button class="mk-btn mk-btn--ghost">Comprar</button>
+      </article>
+
+      <article class="mk-card">
+        <i class="bi bi-bag-check-fill"></i>
+        <img src="../assets/551223956_Escova_ecologica_de_bambu.webp" alt="Escova de Dentes de Bambu">
+        <h4>Escova de Dentes de Bambu</h4>
+        <div class="mk-tags"><span class="mk-badge mk-badge--eco">Compostável</span><span class="mk-badge">Vegano</span></div>
+        <div class="mk-price"><span class="mk-price__now">R$ 14,90</span><span class="mk-price__old">R$ 19,90</span></div>
+        <div class="mk-rate"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><span>3,0</span></div>
+        <button class="mk-btn mk-btn--ghost">Comprar</button>
+      </article>
+
+      <article class="mk-card">
+        <i class="bi bi-bag-check-fill"></i>
+        <img src="../assets/sacola-ecobag-promocional-feita-em-algodao-e-lonita-sfa-brindes-corporativos-personalizados-01-removebg-preview.png" alt="Eco Bag Algodão Orgânico">
+        <h4>Eco Bag Algodão Orgânico</h4>
+        <div class="mk-tags"><span class="mk-badge mk-badge--eco">Reutilizável</span><span class="mk-badge">Algodão orgânico</span></div>
+        <div class="mk-price"><span class="mk-price__now">R$ 29,90</span><span class="mk-price__old">R$ 39,90</span></div>
+        <div class="mk-rate"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i><span>3,5</span></div>
+        <button class="mk-btn mk-btn--ghost">Comprar</button>
+      </article>
+
+      <article class="mk-card">
+        <i class="bi bi-bag-check-fill"></i>
+        <img src="../assets/Fotos-para-site-Cheiro-de-Mato-16-450x450-removebg-preview.png" alt="Sabonete Biodegradável Citrus 120g">
+        <h4>Sabonete Biodegradável 120g</h4>
+        <div class="mk-tags"><span class="mk-badge mk-badge--eco">Biodegradável</span><span class="mk-badge">Sem parabenos</span></div>
+        <div class="mk-price"><span class="mk-price__now">R$ 17,90</span><span class="mk-price__old">R$ 24,90</span></div>
+        <div class="mk-rate"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><span>4,0</span></div>
+        <button class="mk-btn mk-btn--ghost">Comprar</button>
+      </article>
+
+      <article class="mk-card">
+        <i class="bi bi-bag-check-fill"></i>
+        <img src="../assets/D_Q_NP_2X_825778-MLA95837677099_102025-E-removebg-preview.png" alt="Kit Canudos Inox com Escova">
+        <h4>Kit Canudos de Inox</h4>
+        <div class="mk-tags"><span class="mk-badge mk-badge--eco">Reutilizável</span><span class="mk-badge">Inox 304</span></div>
+        <div class="mk-price"><span class="mk-price__now">R$ 22,90</span><span class="mk-price__old">R$ 29,90</span></div>
+        <div class="mk-rate"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><span>4,5</span></div>
+        <button class="mk-btn mk-btn--ghost">Comprar</button>
+      </article>
+
+      <article class="mk-card">
+        <i class="bi bi-bag-check-fill"></i>
+        <img src="../assets/luffa-granel-2-1-removebg-preview.png" alt="Esponja Vegetal Luffa">
+        <h4>Esponja Vegetal Luffa</h4>
+        <div class="mk-tags"><span class="mk-badge mk-badge--eco">Compostável</span><span class="mk-badge">Zero plástico</span></div>
+        <div class="mk-price"><span class="mk-price__now">R$ 9,90</span><span class="mk-price__old">R$ 14,90</span></div>
+        <div class="mk-rate"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><span>3,0</span></div>
+        <button class="mk-btn mk-btn--ghost">Comprar</button>
+      </article>
+
+      <article class="mk-card">
+        <i class="bi bi-bag-check-fill"></i>
+        <img src="../assets/D_NQ_NP_2X_977017-MLB91923757144_092025-F.webp" alt="Composteira Doméstica 15L">
+        <h4>Composteira Doméstica 15L</h4>
+        <div class="mk-tags"><span class="mk-badge mk-badge--eco">Reduz resíduos</span><span class="mk-badge">Casa & Jardim</span></div>
+        <div class="mk-price"><span class="mk-price__now">R$ 189,90</span><span class="mk-price__old">R$ 239,90</span></div>
+        <div class="mk-rate"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><span>4,0</span></div>
+        <button class="mk-btn mk-btn--ghost">Comprar</button>
+      </article>
+
+      <article class="mk-card">
+        <i class="bi bi-bag-check-fill"></i>
+        <img src="../assets/D_Q_NP_2X_927609-MLB75711731667_042024-E-pasta-dental-dentes-boni-natural-hortel-curcuma-gengiva-90g-removebg-preview.png" alt="Refil de Detergente Concentrado">
+        <h4>Pasta de Dente Natural Refil</h4>
+        <div class="mk-tags"><span class="mk-badge mk-badge--eco">Menos plástico</span><span class="mk-badge">Concentrado</span></div>
+        <div class="mk-price"><span class="mk-price__now">R$ 12,90</span><span class="mk-price__old">R$ 15,90</span></div>
+        <div class="mk-rate"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i><span>3,5</span></div>
+        <button class="mk-btn mk-btn--ghost">Comprar</button>
+      </article>
+
+      <article class="mk-card">
+        <i class="bi bi-bag-check-fill"></i>
+        <img src="../assets/D_Q_NP_2X_827733-MLU73080441506_112023-E-removebg-preview.png" alt="Sacos de Lixo Biodegradáveis 30L">
+        <h4>Sacos de Lixo Biodegradáveis 30L</h4>
+        <div class="mk-tags"><span class="mk-badge mk-badge--eco">Biodegradável</span><span class="mk-badge">30L</span></div>
+        <div class="mk-price"><span class="mk-price__now">R$ 18,90</span><span class="mk-price__old">R$ 24,90</span></div>
+        <div class="mk-rate"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><span>4,0</span></div>
+        <button class="mk-btn mk-btn--ghost">Comprar</button>
+      </article>
+
+      <article class="mk-card">
+        <i class="bi bi-bag-check-fill"></i>
+        <img src="../assets/D_Q_NP_2X_855403-MLB86218993541_062025-E-conjunto-de-3-panos-de-cera-de-abelha-reutilizaveis-removebg-preview.png" alt="Panos de Cera de Abelha Reutilizáveis">
+        <h4>Panos de Cera de Abelha</h4>
+        <div class="mk-tags"><span class="mk-badge mk-badge--eco">Reutilizável</span><span class="mk-badge">Substitui filme plástico</span></div>
+        <div class="mk-price"><span class="mk-price__now">R$ 39,90</span><span class="mk-price__old">R$ 49,90</span></div>
+        <div class="mk-rate"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i><span>3,5</span></div>
+        <button class="mk-btn mk-btn--ghost">Comprar</button>
+      </article>
+
+      <article class="mk-card">
+        <i class="bi bi-bag-check-fill"></i>
+        <img src="../assets/su191302-azul1-3412dda16b3e93055a15846489727887-240-0.webp" alt="Refil Filtro de Carvão Ativado">
+        <h4>Copo Retrátil Silicone 350ml</h4>
+        <div class="mk-tags"><span class="mk-badge mk-badge--eco">Menos resíduos</span><span class="mk-badge">Água filtrada</span></div>
+        <div class="mk-price"><span class="mk-price__now">R$ 34,90</span><span class="mk-price__old">R$ 44,90</span></div>
+        <div class="mk-rate"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><span>3,0</span></div>
+        <button class="mk-btn mk-btn--ghost">Comprar</button>
+      </article>
+    </div>
+  </div>
+</section>
+
+    </section>
+    <div data-theme="cicla">
+      <footer class="bs-footer">
+        <div class="bs-footer__top">
+          <div class="bs-brand">
+            <a href="#" class="brand-link" aria-label="Cicla">
+              <span class="brand-logo"
+                ><img src="../assets/icon/ciclastartup.png"
+              /></span>
+            </a>
+          </div>
+
+            <div class="bs-links">
+            <div class="bs-col">
+              <h6>Links</h6>
+              <ul>
+                <li><a href="#">Quem Somos</a></li>
+                <li><a href="#">Transparencia</a></li>
+                <li><a href="#">Analitics</a></li>
+                <li><a href="#">Coleta</a></li>
+                <li><a href="#">Loja</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Sac</a></li>
+              </ul>
+            </div>
+            <div class="bs-col">
+              <h6>Comunidade</h6>
+              <ul>
+                <li><a href="#">Whatspp</a></li>
+                <li><a href="#">Facebook</a></li>
+              </ul>
+            </div>
+            <div class="bs-col">
+              <h6>Contato</h6>
+              <ul>
+                <li><a href="#">Cicla</a></li>
+                <li><a href="#">ciclastartup@gmail.com</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="../js/colet.js"></script>
+  <script src="../js/marketplace.js"></script>
+  <script src="../js/alerta.js"></script>
+  <script src="../js/buttonmobile.js"></script>
+</html>
