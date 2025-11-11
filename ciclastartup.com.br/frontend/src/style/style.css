@@ -186,7 +186,6 @@ header.scrolled .auth-buttons .btn-register {
   }
   .auth-buttons .btn-register,
   .auth-buttons .btn-login {
-    text-decoration: none;
     padding: 0.8rem 1.4rem;
   }
 }
