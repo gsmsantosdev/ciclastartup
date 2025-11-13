@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url(../assets/cicla-background.png);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    body::before {
+    content: "";  /* Necessário para o pseudo-elemento ::before */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../assets/cicla-background.png');  /* Substitua com o caminho da sua imagem */
+    background-size: cover;  /* Faz a imagem cobrir toda a tela */
+    background-position: center;  /* Centraliza a imagem */
+    filter: blur(8px);   /* Aplica o filtro de desfoque */
+    z-index: -1;  /* Coloca o fundo abaixo do conteúdo */
+}
+/* Container de login e registro */
+.login-container,
+.register-container {
+    background-color: white;
+    text-align: center;
+    padding: 40px; /* Ajustei o padding para que fique mais adequado em telas menores */
+    height: auto; /* Remove a altura fixa para se ajustar melhor ao conteúdo */
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Para garantir que ocupe toda a largura disponível */
+    max-width: 400px; /* Tamanho máximo do container */
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+/* Google login button */
+.google-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(65, 65, 65);
+    font-size: 16px;
+    gap: 10px;
+    margin-top: 20px;
+    border: 1px solid rgb(146, 146, 146);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.google-login img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Botão */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Mensagem de erro */
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+/* Links */
+a {
+    color: #4caf50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    /* Em telas menores que 768px (tablets e celulares) */
+    .login-container,
+    .register-container {
+        padding: 20px;  /* Reduz o padding para telas pequenas */
+        height: auto;    /* Permite que a altura se ajuste */
+        width: 90%;      /* Largura ajustada para ocupar mais espaço da tela */
+    }
+
+    .google-login {
+        font-size: 14px;  /* Ajusta o tamanho da fonte para telas menores */
+        padding: 8px;     /* Reduz o padding */
+    }
+
+    .google-login img {
+        width: 20px;      /* Ajusta o tamanho da imagem para telas pequenas */
+        height: 20px;
+    }
+
+    input, button {
+        padding: 12px;     /* Aumenta o padding para um toque mais fácil */
+        font-size: 16px;   /* Ajusta o tamanho da fonte para entradas e botão */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Em telas menores que 480px (celulares mais compactos) */
+    .login-container,
+    .register-container {
+        padding: 15px;    /* Menos padding para otimizar espaço */
+        width: 90%;       /* Largura máxima de 90% */
+    }
+
+    .google-login {
+        font-size: 12px;  /* Reduz ainda mais a fonte */
+        padding: 6px;     /* Ajuste no padding */
+    }
+
+    .google-login img {
+        width: 18px;      /* Ajusta ainda mais o tamanho da imagem */
+        height: 18px;
+    }
+
+    input, button {
+        font-size: 14px;  /* Ajusta a fonte para telas pequenas */
+    }
+}
+
+  </style>
+  <body>
+    <div class="login-container">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <input
+          type="text"
+          id="username"
+          placeholder="Nome de usuário"
+          required
+        /><br />
+        <input
+          type="password"
+          id="password"
+          placeholder="Senha"
+          required
+        /><br />
+        <button type="submit">Entrar</button>
+      </form>
+      <div id="error-message" class="error-message"></div>
+      <p>
+        Ainda não tem uma conta?
+        <a href="javascript:void(0);" onclick="showRegisterForm()">Registrar</a>
+      </p>
+      <a href="" class="google-login">
+        <img
+          src="../assets/google-logo-icon-png-transparent-background-osteopathy-16.webp"
+          alt="Google Logo"
+        />
+        Entrar com Google
+      </a>
+    </div>
+
+    <div class="register-container" style="display: none">
+      <h2>Registrar</h2>
+      <form id="registerForm">
+        <input
+          type="text"
+          id="newUsername"
+          placeholder="Nome de usuário"
+          required
+        /><br />
+        <input type="email" id="newEmail" placeholder="Email" required /><br />
+        <input
+          type="password"
+          id="newPassword"
+          placeholder="Senha"
+          required
+        /><br />
+        <button type="submit">Registrar</button>
+      </form>
+      <div id="register-error-message" class="error-message"></div>
+      <p>
+        Já tem uma conta?
+        <a href="javascript:void(0);" onclick="showLoginForm()">Entrar</a>
+      </p>
+      <a href="" class="google-login">
+        <img
+          src="../assets/google-logo-icon-png-transparent-background-osteopathy-16.webp"
+          alt="Google Logo"
+        />
+        Entrar com Google
+      </a>  
+    </div>
+
+    <script>
+      // Função para exibir a tela de login
+      function showLoginForm() {
+        document.querySelector(".login-container").style.display = "block";
+        document.querySelector(".register-container").style.display = "none";
+      }
+
+      // Função para exibir a tela de registro
+      function showRegisterForm() {
+        document.querySelector(".login-container").style.display = "none";
+        document.querySelector(".register-container").style.display = "block";
+      }
+
+      // Registrar novo usuário no localStorage
+      document
+        .getElementById("registerForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const username = document.getElementById("newUsername").value;
+          const password = document.getElementById("newPassword").value;
+
+          // Verifica se o nome de usuário já está registrado
+          if (localStorage.getItem(username)) {
+            document.getElementById("register-error-message").textContent =
+              "Usuário já registrado!";
+          } else {
+            // Armazena o novo usuário no localStorage
+            localStorage.setItem(username, password);
+            alert(
+              "Usuário registrado com sucesso! Agora você pode fazer login."
+            );
+            showLoginForm();
+          }
+        });
+
+      // Função para fazer login
+      document
+        .getElementById("loginForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const username = document.getElementById("username").value;
+          const password = document.getElementById("password").value;
+          const storedPassword = localStorage.getItem(username);
+
+          // Verifica as credenciais
+          if (storedPassword && storedPassword === password) {
+            alert("Login bem-sucedido!");
+            window.location.href = "dashboard.html"; // Redireciona para uma página fictícia do painel
+          } else {
+            document.getElementById("error-message").textContent =
+              "Usuário ou senha incorretos.";
+          }
+        });
+    </script>
+  </body>
+</html>
